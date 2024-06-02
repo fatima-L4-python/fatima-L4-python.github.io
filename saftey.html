@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety and Precautions</title>
+    <style>
+
+      body {
+  cursor: url("cursor.png"), auto;
+}
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            background-size: cover;
+            background-position: center;
+            animation: changeBackground 8s infinite;
+        }
+
+        @keyframes changeBackground {
+            0% { background-image: url('image1.jpg'); }
+            25% { background-image: url('image2.jpg'); }
+            50% { background-image: url('image3.jpg'); }
+            75% { background-image: url('image4.jpg'); }
+            100% { background-image: url('image1.jpg'); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 9px solid yellow;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, select, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: yellow;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: orange;
+        }
+
+        button {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: rgb(252, 252, 93);
+  }
+  
+  .booknow{
+    position: fixed;
+    top: 7.0%;
+    right: 25px;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .navbaar {
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-left: -30px; 
+    }    
+
+    .logo img {
+      width: 70px;
+      height: auto;
+      display: block;
+      margin-left: 20px;
+    }
+
+    .link-button img {
+      width: 50px;
+      height: auto;
+      border-radius: 5px;
+      position: absolute;
+      right: 155px;
+      margin-top:-30px;
+    }
+
+    .booknow {
+      margin-left: auto;
+      color: #fff;
+      padding: 0 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      margin-left: -30px; 
+    }
+
+    nav ul li {
+      margin: 0 15px;
+      left: 50px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .text {
+      margin-top: 50px;
+    }
+  
+  
+  footer{
+    background-color: #000000;
+    padding: 20px 0;
+    color: aquamarine;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .column{
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .column h3{
+    color: #fafafa;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .column ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .column ul li{
+    margin-bottom: 5px;
+  }
+  
+  .column ul li a{
+    color: fafafa;
+    text-decoration: none;
+  }
+  
+  .column ul li a:hover{
+    text-decoration: underline;
+  }
+  
+  .column img{
+   max-width: 100%;
+   height: auto;
+  }
+  
+  .copy-right{
+    text-align: center;
+    color: rgb(0, 3, 2);
+    height: 45px;
+    background-color: #ffffff2d;
+  }
+
+  
+
+    </style>
+</head>
+<body>
+    <button id="scrollToTopButton" onchange="scrollToTop()">
+        <span class="arrow">&#8593;</span>
+        </button>
+        <header>
+          <div class="navbaar">
+            <nav>
+              <div class="logo">
+              <img src="logofive.jpg" alt="logo">
+                </div>
+                <a href="http://abudhabiparasail.com/contact-us" class="link-button">
+                  <img src="linkfive.png" alt="link">
+                  </a>
+                  <div class="booknow">Contact Us</div>
+                  <ul>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="aboutus.html" id="about">About Us</a></li>
+                    <li><a href="signup.html" id="signup">Reservation</a></li>
+                    <li><a href="instructors.html" id="instructors">Meet Our instructors</a></li>
+                    <li><a href="saftey.html" id="safety">Safety</a></li>
+                    </ul>
+                    </nav>
+                    </div>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Safety and Precautions:</h1>
+        <ul>Ensure all activities are supervised by certified and experienced instructors.</ul>
+        <ul>Use high-quality, regularly inspected, and well-maintained equipment.</ul>
+        <ul>Fully insure the company and provide information on liability waivers.</ul>
+        <ul>Outline emergency procedures and first-aid measures for each activity.</ul>
+        <ul>State that activities are subject to weather conditions and may be rescheduled for safety.</ul>
+        <ul>Clearly state weight and age restrictions for all activities.</ul>
+        <ul>Mandate the use of life jackets for parasailing and helmets and harnesses for ziplining.</ul>
+        <ul>Ensure the parasailing boat is equipped with all necessary safety gear, including radios for communication.</ul>
+        <ul>Describe safe take-off and landing procedures for parasailing.</ul>
+        <ul>Provide mandatory pre-jump training for skydiving participants.</ul>
+        <ul>List health prerequisites and require participants to disclose any medical conditions.</ul>
+        <ul>Explain thorough pre-flight checks of parachutes and backup systems for skydiving.</ul>
+        <ul>Highlight the use of altimeters and automatic activation devices (AAD) for skydiving.</ul>
+        <ul>Require participants to wear a safety harness and helmet for ziplining.</ul>
+        <ul>Supervise all zipline launches with trained staff and detail emergency brake systems.</ul>
+    </div>
+
+    <footer>
+        <div class="footer-columns">
+           <div class="column">
+            <img src="footercp.jpg" alt="footerone">
+           </div>
+           <div class="column">
+            <img src="footertwoo.png" alt="footertwo">
+            </div>
+            <div class="column">
+              <h3>Quick Links:</h3>
+              <ul>
+                <li><a href="http://abudhabiparasail.com/faq/">> FAQ</a></li>
+                <li><a href="http://abudhabiparasail.com/media/">> Media</a></li>
+                <li><a href="signup.html">> Reserve</a></li>
+                <li><a href="aboutus.html">> About Us</a></li>
+                </ul>
+                </div>
+                <a href="https://www.google.com/maps/dir//Corniche+Beach+-+Abu+Dhabi/@24.4717038,54.3373724,16.36z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3e5e65dcfeaf7815:0xc955f11be27309c7!2m2!1d54.3374924!2d24.4719602?entry=ttu" class="column">
+                  <img src="footerthree.png" alt="link">
+                  </a>
+                
+                  </div>
+                  </footer>
+                  <footer>
+                    <div class="copy-right">
+                      <p>All rights reserved to the orignal parasailing website</p>
+                      </div>
+                      </footer>
+                      <script>
+                          
+let mybutton = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "flex"; 
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+mybutton.addEventListener("click", function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
+
+                      </script>
+
+</body>
+</html>

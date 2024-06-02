@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="reserve.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <button id="scrollToTopBtn" title="Go to top">
+        &#8679; 
+    </button>
+        <header>
+          <div class="navbaar">
+            <nav>
+              <div class="logo">
+              <img src="logofive.jpg" alt="logo">
+                </div>
+                <a href="http://abudhabiparasail.com/contact-us/" class="link-button">
+                  <img src="linkfive.png" alt="link">
+                  </a>
+                  <div class="booknow">Contact Us</div>
+                  <ul>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="aboutus.html" id="about">About Us</a></li>
+                    <li><a href="signup.html" id="signup">Reservation</a></li>
+                    <li><a href="instructors.html" id="instructors">Meet Our instructors</a></li>
+                    <li><a href="saftey.html" id="safety">Safety</a></li>
+                    </ul>
+                    </nav>
+                    </div>
+    <div class="container">
+        <h1>Reservation</h1>
+        <div class="reservation-container">
+            <div class="image">
+                <img src="try1.jpg" alt="Image">
+            </div>
+            <div class="reservation-form">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="text" id="date" name="date" placeholder="dd/mm/yyyy" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Activity</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select Activity</option>
+                                <!-- Add time options here -->
+                                <option value="Parasailing">Parasailing</option>
+                                <option value="Skydiving">Skydiving</option>
+                                <option value="Zipline">Zipline</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-number">Phone No.</label>
+                        <input type="tel" id="phone-number" name="phone-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" id="email-address" name="email-address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="debit-card">Debit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="cash">Cash</option>
+                        </select>
+                    </div>
+                    <button type="submit">RESERVE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-columns">
+           <div class="column">
+            <img src="footercp.jpg" alt="footerone">
+           </div>
+           <div class="column">
+            <img src="footertwoo.png" alt="footertwo">
+            </div>
+            <div class="column">
+              <h3>Quick Links:</h3>
+              <ul>
+                <li><a href="http://abudhabiparasail.com/faq/">> FAQ</a></li>
+                <li><a href="http://abudhabiparasail.com/media/">> Media</a></li>
+                <li><a href="signup.html">> Reserve</a></li>
+                <li><a href="aboutus.html">> About Us</a></li>
+                </ul>
+                </div>
+                <a href="https://www.google.com/maps/dir//Corniche+Beach+-+Abu+Dhabi/@24.4717038,54.3373724,16.36z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3e5e65dcfeaf7815:0xc955f11be27309c7!2m2!1d54.3374924!2d24.4719602?entry=ttu" class="column">
+                  <img src="footerthree.png" alt="link">
+                  </a>
+                
+                  </div>
+                  </footer>
+                  <footer>
+                    <div class="copy-right">
+                      <p>All rights reserved to the orignal parasailing website</p>
+                      </div>
+                      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#date", {
+            dateFormat: "d/m/Y"
+        });
+
+let mybutton = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "flex"; 
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+mybutton.addEventListener("click", function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
+
+    </script>
+</body>
+</html>

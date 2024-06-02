@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modal Popup Example</title>
+<link rel="stylesheet" href="inst.css">
+</head>
+<body>
+    <button id="scrollToTopBtn" title="Go to top">
+        &#8679; 
+    </button>
+        <header>
+          <div class="navbaar">
+            <nav>
+              <div class="logo">
+              <img src="logofive.jpg" alt="logo">
+                </div>
+                <a href="http://abudhabiparasail.com/contact-us/" class="link-button">
+                  <img src="linkfive.png" alt="link">
+                  </a>
+                  <div class="booknow">Contact Us</div>
+                  <ul>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="aboutus.html" id="about">About Us</a></li>
+                    <li><a href="signup.html" id="signup">Reservation</a></li>
+                    <li><a href="instructors.html" id="instructors">Meet Our instructors</a></li>
+                    <li><a href="saftey.html" id="safety">Safety</a></li>
+                    </ul>
+                    </nav>
+                    </div>
+
+<h1>ZIPLINE:</h1>
+
+<div class="character main-character">
+    <img src="bobclark.png" alt="Joel" style="cursor:pointer;">
+    <button class="find-more" onclick="openModal('bobclark')">Find More</button>
+    <div id="bobclarkModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bobclarkModal')">&times;</span>
+            <h2>Bob Clark</h2>
+            <p>Bob Clark is a zipline instructor with over a decade of experience guiding thrill-seekers through breathtaking aerial adventures. His expertise and dedication to safety ensure that every rider feels secure while soaring through the treetops. Bob's enthusiasm and friendly demeanor make each zipline tour an unforgettable experience for all participants.</p>
+        </div>
+    </div>
+</div>
+
+<div class="character third-character">
+    <img src="jonstark.png" alt="Abby" style="cursor:pointer;">
+    <button class="find-more" onclick="openModal('jonstark')">Find More</button>
+    <div id="jonstarkModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('jonstarkModal')">&times;</span>
+            <h2>Jon Stark</h2>
+            <p>Jon Stark brings his passion for outdoor adventures and extensive knowledge of ziplining to every tour he leads. With a background in environmental education, Jon enriches the ziplining experience with fascinating insights about the surrounding nature. His professionalism and warm approach create a welcoming atmosphere, making every rider's journey both exciting and educational.</p>
+        </div>
+    </div>
+</div>
+
+<h1>PARASAILING:</h1>
+
+<div class="character secondary-character">
+    <img src="dylandolan.png" alt="Ellie" style="cursor:pointer;">
+    <button class="find-more" onclick="openModal('dylandolan')">Find More</button>
+    <div id="dylandolanModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('dylandolanModal')">&times;</span>
+            <h2>Dylan Dolan</h2>
+            <p>Dylan Dolan is a skilled parasailing instructor known for his calm demeanor and exceptional expertise on the water. With years of experience, he effortlessly balances the thrill of flight with the utmost safety, ensuring every adventurer has a memorable ride. Dylan's personable nature and passion for parasailing create an exhilarating yet comfortable experience for all participants.</p>
+        </div>
+    </div>
+</div>
+
+<div class="character third-character">
+    <img src="graysonpartridge.png" alt="Abby" style="cursor:pointer;">
+    <button class="find-more" onclick="openModal('graysonpartridge')">Find More</button>
+    <div id="graysonpartridgeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('graysonpartridgeModal')">&times;</span>
+            <h2>Grayson Partridge</h2>
+            <p>Grayson Partridge is a dedicated parasailing instructor whose love for the ocean shines through in every flight he orchestrates. His extensive knowledge and attention to detail guarantee a seamless and enjoyable parasailing adventure. Grayson's friendly and reassuring presence makes even first-time fliers feel at ease, turning their aerial experience into a cherished memory.</p>
+        </div>
+    </div>
+</div>
+
+<h1>SCUBA DIVING:</h1>
+
+<div class="character third-character">
+    <img src="bramclement.png" alt="Abby" style="cursor:pointer;">
+    <button class="find-more" onclick="openModal('bramclement')">Find More</button>
+    <div id="bramclementModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bramclementModal')">&times;</span>
+            <h2>Bram Clement</h2>
+            <p>Bram Clement is a highly experienced scuba diving instructor with a deep passion for marine life and underwater exploration. His extensive knowledge and calm guidance ensure that divers of all levels feel confident and secure during their underwater adventures. Bram's enthusiasm for the ocean is contagious, making each dive an exciting and educational experience.</p>
+        </div>
+    </div>
+</div>
+
+<div class="character third-character">
+    <img src="jasonrompallo.png" alt="Abby" style="cursor:pointer;">
+    <button class="find-more" onclick="openModal('jasonrompallo')">Find More</button>
+    <div id="jasonrompalloModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('jasonrompalloModal')">&times;</span>
+            <h2>Jason Rompallo</h2>
+            <p>Jason Rompallo is a dedicated scuba diving instructor known for his meticulous approach to safety and his infectious love for the sea. With years of diving under his belt, Jason expertly leads divers through stunning underwater landscapes, providing unforgettable glimpses of marine biodiversity. His friendly and encouraging demeanor helps divers feel at ease, enhancing their overall diving experience.</p>
+        </div>
+    </div>
+</div>
+
+<h1>SKY DIVING:</h1>
+
+<div class="character third-character">
+    <img src="stephnbeck.png" alt="Abby" style="cursor:pointer;">
+    <button class="find-more" onclick="openModal('stephnbeck')">Find More</button>
+    <div id="stephnbeckModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('stephnbeckModal')">&times;</span>
+            <h2>Stephn Beck</h2>
+            <p>Stephen Beck is a seasoned skydiving instructor whose precision and expertise make every jump an exhilarating yet safe experience. With thousands of jumps to his name, Stephen’s calm and confident instruction helps skydivers overcome their fears and embrace the thrill of freefall. His passion for skydiving is evident, inspiring both novice and experienced jumpers alike.</p>
+        </div>
+    </div>
+</div>
+
+<div class="character third-character">
+    <img src="sandycarruth.png" alt="Abby" style="cursor:pointer;">
+    <button class="find-more" onclick="openModal('sandycarruth')">Find More</button>
+    <div id="sandycarruthModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('sandycarruthModal')">&times;</span>
+            <h2>Sandy Carruth</h2>
+            <p>Sandy Carruth is a dynamic skydiving instructor known for her enthusiastic approach and unwavering commitment to safety. Her extensive training and friendly demeanor ensure that every skydiver feels supported and excited as they take the leap. Sandy’s infectious energy and love for the sport create a fun and memorable experience for all who jump with her.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-columns">
+       <div class="column">
+        <img src="footercp.jpg" alt="footerone">
+       </div>
+       <div class="column">
+        <img src="footertwoo.png" alt="footertwo">
+        </div>
+        <div class="column">
+          <h3>Quick Links:</h3>
+          <ul>
+            <li><a href="http://abudhabiparasail.com/faq/">> FAQ</a></li>
+            <li><a href="http://abudhabiparasail.com/media/">> Media</a></li>
+            <li><a href="signup.html">> Reserve</a></li>
+            <li><a href="aboutus.html">> About Us</a></li>
+            </ul>
+            </div>
+            <a href="https://www.google.com/maps/dir//Corniche+Beach+-+Abu+Dhabi/@24.4717038,54.3373724,16.36z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3e5e65dcfeaf7815:0xc955f11be27309c7!2m2!1d54.3374924!2d24.4719602?entry=ttu" class="column">
+              <img src="footerthree.png" alt="link">
+              </a>
+            
+              </div>
+              </footer>
+              <footer>
+                <div class="copy-right">
+                  <p>All rights reserved to the orignal parasailing website</p>
+                  </div>
+                  </footer>
+
+<script src="instr.js"></script>
+</body>
+</html>
